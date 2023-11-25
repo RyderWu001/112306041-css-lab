@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            background-color: #61dafb;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex; /* Use flexbox for the container */
+            justify-content: space-around; /* Horizontally space the items */
+            margin-top: 20px;
+        }
+
+        .menu-bar {
+            background-color: #61dafb;
+            padding: 10px 15px;
+            border-radius: 5px;
+            z-index: 2;
+        }
+
+        .dropdown {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .dropdown-button {
+            background-color: #61dafb;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #61dafb;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 8px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+
+        img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My first style page!!!<br>This is my wesite. Hope you have a good time here!</h1>
+
+  
+
+    <div class="container">
+        <div class="menu-bar">
+            <div class="dropdown">
+                <button class="dropdown-button">Home</button>
+                <div class="dropdown-content">
+                    <a class="dropdown-item" href="#">introduction</a>
+                    <a class="dropdown-item" href="#">history</a>
+                    <a class="dropdown-item" href="#">thoughts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="dropdown">
+                <button class="dropdown-button">About</button>
+                <div class="dropdown-content">
+                    <a class="dropdown-item" href="#">introduction</a>
+                    <a class="dropdown-item" href="#">Lab Members</a>
+                    <a class="dropdown-item" href="#">Publications</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="dropdown">
+                <button class="dropdown-button">Hobby</button>
+                <div class="dropdown-content">
+                    <a class="dropdown-item" href="#">Swimming</a>
+                    <a class="dropdown-item" href="#">Badminton</a>
+                    <a class="dropdown-item" href="#">Guitar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="dropdown">
+                <button class="dropdown-button">Goals</button>
+                <div class="dropdown-content">
+                    <a class="dropdown-item" href="#">Study Abroad</a>
+                    <a class="dropdown-item" href="#">Learn Programming</a>
+                    <a class="dropdown-item" href="#">Work out Everyday</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="antarctica.jpg" alt="CSS Designs Image">
+
+    <p>made by 112306041 吳育來</p>
+
+</body>
+</html>
